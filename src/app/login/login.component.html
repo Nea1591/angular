@@ -1,0 +1,14 @@
+<form>
+<input type="text" placeholder="username" #u><br><br>
+<input type="password" placeholder="password" #p><br><br>
+<button (click)="check(u.value,p.value)">Login</button>
+</form>
+
+<span>{{mssg}}</span>
+
+
+<form>
+   <input type="text" [(ngModel)]="firstname" placeholder="firstname" name="fname">
+   <input type="password" [(ngModel)]="pwd" placeholder="firstname" name="pwd">
+   <button (click)="getData()">Login</button>
+</form>

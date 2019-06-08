@@ -1,0 +1,16 @@
+{{title}}
+<p>Hello Buddy !!</p>
+<a [routerLink]="['/java']">Java</a>
+<a [routerLink]="['/python']">Python</a>
+<a [routerLink]="['/lazy1']">lazy</a>
+<a [routerLink]="['/login']">login</a>
+<a [routerLink]="['/dashboard']">DashBoard</a>
+<router-outlet></router-outlet>
+<app-data [employeeName]="record.eName" [employeeAge]="record.eAge" [employeeCity]="record.eCity" *ngFor ="let records of record"></app-data>
+
+
+
+<ul *ngFor = 'let n of num1'>
+    <li>{{n | myPipes:n}}</li>
+</ul>
+<app-python></app-python>
